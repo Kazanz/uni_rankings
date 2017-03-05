@@ -1,5 +1,6 @@
 import csv
 import json
+import ntpath
 import os
 
 import xlrd
@@ -60,7 +61,7 @@ def build_model(f):
     cols, types = get_columns(f)
     return {
         "cubes": [build_cube(f, type_, col, cols) for col, type_ in zip(cols, types)],
-        "dimensions": [build_dimension(f, cols)],
+        "dimensions": build_dimensions(f, cols),
     }
 
 
@@ -75,16 +76,15 @@ def get_columns(f):
 def build_cube(f, col_type, col_name, all_cols):
     type_args = {
         bool: ["count"],
-        float: ["avg", "count", "min", "max"],
+        float: ["count", "avg", "max", "min"],
         str: ["count"],
     }
     return {
         "name": cube_name(col_name),
         "label": cube_name(col_name),
-        "dimensions": [dimension_name(f)],
+        "dimensions": [dimension_name(f, col) for col in all_cols],
         "measures": [{"name": col_name, "label": col_name}],
         "aggregates": build_aggregates(col_name, type_args[col_type]),
-        "mappings": build_mappings(f, all_cols)
     }
 
 
@@ -96,16 +96,11 @@ def build_aggregates(column, args):
     } for arg in args]
 
 
-def build_mappings(f, cols):
-    return {"{}.{}".format(dimension_name(f), col): col
-            for col in cols}
-
-
-def build_dimension(f, all_cols):
-    return {
-        "name": dimension_name(f),
-        "levels": [build_level(col) for col in all_cols],
-    }
+def build_dimensions(f, all_cols):
+    return [{
+        "name": dimension_name(f, col),
+        "levels": [build_level(col)],
+    } for col in all_cols]
 
 
 def build_level(col):
@@ -120,8 +115,9 @@ def cube_name(col):
     return "{}_cube".format(col)
 
 
-def dimension_name(f):
-    return "{}_dimension".format(f.split(".")[0])
+def dimension_name(f, col):
+    fbase = ntpath.basename(f).split(".")[0]
+    return "{}_{}_dimension".format(fbase, col)
 
 
 def get_sheet(f):

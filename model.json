@@ -3,35 +3,32 @@
     {
       "aggregates": [
         {
-          "function": "avg",
-          "measure": "Rank",
-          "name": "Rank_avg"
-        },
-        {
           "function": "count",
           "measure": "Rank",
           "name": "Rank_count"
         },
         {
-          "function": "min",
+          "function": "avg",
           "measure": "Rank",
-          "name": "Rank_min"
+          "name": "Rank_avg"
         },
         {
           "function": "max",
           "measure": "Rank",
           "name": "Rank_max"
+        },
+        {
+          "function": "min",
+          "measure": "Rank",
+          "name": "Rank_min"
         }
       ],
       "dimensions": [
-        "data/usnews_2017_dimension"
+        "usnews_2017_Rank_dimension",
+        "usnews_2017_School_dimension",
+        "usnews_2017_Actual graduation rate_dimension"
       ],
       "label": "Rank_cube",
-      "mappings": {
-        "data/usnews_2017_dimension.Actual graduation rate": "Actual graduation rate",
-        "data/usnews_2017_dimension.Rank": "Rank",
-        "data/usnews_2017_dimension.School": "School"
-      },
       "measures": [
         {
           "label": "Rank",
@@ -49,14 +46,11 @@
         }
       ],
       "dimensions": [
-        "data/usnews_2017_dimension"
+        "usnews_2017_Rank_dimension",
+        "usnews_2017_School_dimension",
+        "usnews_2017_Actual graduation rate_dimension"
       ],
       "label": "School_cube",
-      "mappings": {
-        "data/usnews_2017_dimension.Actual graduation rate": "Actual graduation rate",
-        "data/usnews_2017_dimension.Rank": "Rank",
-        "data/usnews_2017_dimension.School": "School"
-      },
       "measures": [
         {
           "label": "School",
@@ -68,35 +62,32 @@
     {
       "aggregates": [
         {
-          "function": "avg",
-          "measure": "Actual graduation rate",
-          "name": "Actual graduation rate_avg"
-        },
-        {
           "function": "count",
           "measure": "Actual graduation rate",
           "name": "Actual graduation rate_count"
         },
         {
-          "function": "min",
+          "function": "avg",
           "measure": "Actual graduation rate",
-          "name": "Actual graduation rate_min"
+          "name": "Actual graduation rate_avg"
         },
         {
           "function": "max",
           "measure": "Actual graduation rate",
           "name": "Actual graduation rate_max"
+        },
+        {
+          "function": "min",
+          "measure": "Actual graduation rate",
+          "name": "Actual graduation rate_min"
         }
       ],
       "dimensions": [
-        "data/usnews_2017_dimension"
+        "usnews_2017_Rank_dimension",
+        "usnews_2017_School_dimension",
+        "usnews_2017_Actual graduation rate_dimension"
       ],
       "label": "Actual graduation rate_cube",
-      "mappings": {
-        "data/usnews_2017_dimension.Actual graduation rate": "Actual graduation rate",
-        "data/usnews_2017_dimension.Rank": "Rank",
-        "data/usnews_2017_dimension.School": "School"
-      },
       "measures": [
         {
           "label": "Actual graduation rate",
@@ -115,14 +106,24 @@
           ],
           "label": "Rank",
           "name": "Rank"
-        },
+        }
+      ],
+      "name": "usnews_2017_Rank_dimension"
+    },
+    {
+      "levels": [
         {
           "attributes": [
             "School"
           ],
           "label": "School",
           "name": "School"
-        },
+        }
+      ],
+      "name": "usnews_2017_School_dimension"
+    },
+    {
+      "levels": [
         {
           "attributes": [
             "Actual graduation rate"
@@ -131,7 +132,7 @@
           "name": "Actual graduation rate"
         }
       ],
-      "name": "data/usnews_2017_dimension"
+      "name": "usnews_2017_Actual graduation rate_dimension"
     }
   ]
 }
