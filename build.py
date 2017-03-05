@@ -80,8 +80,8 @@ def build_cube(f, col_type, col_name, all_cols):
         str: ["count"],
     }
     return {
-        "name": cube_name(col_name),
-        "label": cube_name(col_name),
+        "name": "{}_cube".format(col_name),
+        "label": col_name,
         "dimensions": [dimension_name(f, col) for col in all_cols],
         "measures": [{"name": col_name, "label": col_name}],
         "aggregates": build_aggregates(col_name, type_args[col_type]),
@@ -93,6 +93,7 @@ def build_aggregates(column, args):
         "name": "{}_{}".format(column, arg),
         "function": arg,
         "measure": column,
+        "label": arg,
     } for arg in args]
 
 
@@ -100,6 +101,7 @@ def build_dimensions(f, all_cols):
     return [{
         "name": dimension_name(f, col),
         "levels": [build_level(col)],
+        "label": col,
     } for col in all_cols]
 
 
