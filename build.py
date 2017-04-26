@@ -5,7 +5,7 @@ import os
 
 import xlrd
 from cubes import Workspace
-from cubes.tutorial.sql import create_table_from_csv
+from helper import create_table_from_csv
 from sqlalchemy import create_engine
 
 
@@ -35,16 +35,9 @@ def build_table(f, db):
     fields = [(col, mapper[type_]) for col, type_ in zip(cols, types)]
 
     for cube in cubes:
+        print(cube)
         create_table_from_csv(
             engine, csv_name, table_name=cube, fields=fields, create_id=True)
-
-        # This can be removed later.
-        workspace = Workspace()
-        workspace.register_default_store("sql", url=db)
-        workspace.import_model("model.json")
-        browser = workspace.browser(cube)
-        result = browser.aggregate()
-        print(result.summary)
 
     os.remove(csv_name)
 
@@ -67,10 +60,17 @@ def build_model(f):
 
 def get_columns(f):
     worksheet = get_sheet(f)
-    types = {1: str, 2: float, 4: bool}
-    cols = [worksheet.cell_value(0, i) for i in range(0, worksheet.ncols)]
-    types = [types[worksheet.cell_type(1, i)] for i in range(0, worksheet.ncols)]
+    cols = [worksheet.cell_value(0, col_num) for col_num in range(0, worksheet.ncols)]
+    types = [get_type(worksheet, col_num) for col_num in range(0, worksheet.ncols)]
     return cols, types
+
+
+def get_type(worksheet, column):
+    types = {1: str, 2: float, 4: bool}
+    for row in range(1, 100):
+        type_ = types.get(worksheet.cell_type(row, column))
+        if type_:
+            return type_
 
 
 def build_cube(f, col_type, col_name, all_cols):
@@ -80,7 +80,7 @@ def build_cube(f, col_type, col_name, all_cols):
         str: ["count"],
     }
     return {
-        "name": "{}_cube".format(col_name),
+        "name": cube_name(col_name),
         "label": col_name,
         "dimensions": [dimension_name(f, col) for col in all_cols],
         "measures": [{"name": col_name, "label": col_name}],
@@ -114,12 +114,12 @@ def build_level(col):
 
 
 def cube_name(col):
-    return "{}_cube".format(col)
+    return "{}_cube".format(col.replace(" ", "_"))
 
 
 def dimension_name(f, col):
     fbase = ntpath.basename(f).split(".")[0]
-    return "{}_{}_dimension".format(fbase, col)
+    return "{}_{}_dimension".format(fbase, col).replace(" ", "_")
 
 
 def get_sheet(f):
