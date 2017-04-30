@@ -2,6 +2,7 @@ import csv
 import json
 import ntpath
 import os
+import re
 
 import xlrd
 from cubes import Workspace
@@ -114,17 +115,22 @@ def build_level(col):
 
 
 def cube_name(col):
-    return "{}_cube".format(col.replace(" ", "_"))
+    return sanitize_name("{}_cube".format(col))
 
 
 def dimension_name(f, col):
     fbase = ntpath.basename(f).split(".")[0]
-    return "{}_{}_dimension".format(fbase, col).replace(" ", "_")
+    return sanitize_name("{}_{}_dimension".format(fbase, col))
 
 
 def get_sheet(f):
     wb = xlrd.open_workbook(f)
     return wb.sheet_by_name(wb.sheet_names()[0])
+
+
+def sanitize_name(name):
+    name = re.sub('[^0-9a-zA-Z]+', '_', name)
+    return name.replace(' ', '_')
 
 
 if __name__ == "__main__":
