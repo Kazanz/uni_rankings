@@ -42,8 +42,11 @@
     // Initialize CubesViewer when document is ready
     $(document).ready(function() {
 
-    	var cubesUrl = prompt ("Enter your Cubes Server URL\n(or try http://cubesdemo.cubesviewer.com)", "http://localhost:5000");
-        //var cubesUrl = "http://localhost:5000";
+        if (document.URL.indexOf("localhost") {
+    	    var cubesUrl = prompt ("Enter your Cubes Server URL\n(or try http://cubesdemo.cubesviewer.com)", "http://localhost:5000");
+        } else {
+            var cubesUrl = "http://ec2-107-21-74-51.compute-1.amazonaws.com:5000/";
+        }
 
         cubesviewerStudio.init({
         	cubesUrl: cubesUrl,
@@ -63,7 +66,6 @@
         </div>
 
         <h1>US News Rankings Explorer </h1>
-        <small>Local HTML version (<a href="https://github.com/jjmontesl/cubesviewer-server" target="_blank">server-side features</a> are not available)</small>
 
     </div>
 
@@ -79,12 +81,9 @@
     	<div style="height: 1px; border-top: 1px solid #DDDDDD; padding-top: 4px;"></div>
     	<div style="float: right; white-space: nowrap;">
     		<p style="vertical-align: middle; margin: 2px;">
-    		<a href="http://databrewery.org/" target="_blank"><img title="Powered by Databrewery Cubes" style="width: 70px; height: 25px;" src="img/cubes-logo.png" /></a>
-            <a href="https://github.com/jjmontesl/cubesviewer" target="_blank"><img title="Powered by CubesViewer" style="width: 50px; height: 25px;" src="img/cubesviewer-logo.png" /></a>
+    		<a ><img title="Powered by Databrewery Cubes" style="width: 70px; height: 25px;" src="img/cubes-logo.png" /></a>
+            <a><img title="Powered by CubesViewer" style="width: 50px; height: 25px;" src="img/cubesviewer-logo.png" /></a>
     		</p>
-    	</div>
-    	<div>
-    		<p><a href="https://github.com/jjmontesl/cubesviewer" target="_blank">CubesViewer</a> <span class="cv-version"></span> - Cubes OLAP explorer</p>
     	</div>
     </div>
 
