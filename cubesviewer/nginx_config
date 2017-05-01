@@ -1,0 +1,17 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        server_name _;
+
+        index studio.html studio.htm;
+
+        location /dist {
+                root /srv/uni_rankings/cubesviewer;
+                try_files $uri $uri/ =404;
+        }
+
+        location / {
+                root /srv/uni_rankings/cubesviewer/html;
+                try_files $uri $uri/ =404;
+        }
+}
