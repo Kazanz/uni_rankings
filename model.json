@@ -5854,7 +5854,7 @@
             "Rank"
           ],
           "label": "Rank",
-          "name": "Rank"
+          "name": "Rank_level"
         }
       ],
       "name": "usnews_9_9_16_Rank_dimension"
@@ -5867,7 +5867,7 @@
             "School"
           ],
           "label": "School",
-          "name": "School"
+          "name": "School_level"
         }
       ],
       "name": "usnews_9_9_16_School_dimension"
@@ -5880,7 +5880,7 @@
             "Faculty Full time"
           ],
           "label": "Faculty Full time",
-          "name": "Faculty Full time"
+          "name": "Faculty_Full_time_level"
         }
       ],
       "name": "usnews_9_9_16_Faculty_Full_time_dimension"
@@ -5893,7 +5893,7 @@
             "Faculty Part time"
           ],
           "label": "Faculty Part time",
-          "name": "Faculty Part time"
+          "name": "Faculty_Part_time_level"
         }
       ],
       "name": "usnews_9_9_16_Faculty_Part_time_dimension"
@@ -5906,7 +5906,7 @@
             "Faculty Total"
           ],
           "label": "Faculty Total",
-          "name": "Faculty Total"
+          "name": "Faculty_Total_level"
         }
       ],
       "name": "usnews_9_9_16_Faculty_Total_dimension"
@@ -5919,7 +5919,7 @@
             "Terminal Full time"
           ],
           "label": "Terminal Full time",
-          "name": "Terminal Full time"
+          "name": "Terminal_Full_time_level"
         }
       ],
       "name": "usnews_9_9_16_Terminal_Full_time_dimension"
@@ -5932,7 +5932,7 @@
             "Faculty with top degree part time"
           ],
           "label": "Faculty with top degree part time",
-          "name": "Faculty with top degree part time"
+          "name": "Faculty_with_top_degree_part_time_level"
         }
       ],
       "name": "usnews_9_9_16_Faculty_with_top_degree_part_time_dimension"
@@ -5945,7 +5945,7 @@
             "Faculty with top degree total"
           ],
           "label": "Faculty with top degree total",
-          "name": "Faculty with top degree total"
+          "name": "Faculty_with_top_degree_total_level"
         }
       ],
       "name": "usnews_9_9_16_Faculty_with_top_degree_total_dimension"
@@ -5958,7 +5958,7 @@
             "Classes size 2 to 9"
           ],
           "label": "Classes size 2 to 9",
-          "name": "Classes size 2 to 9"
+          "name": "Classes_size_2_to_9_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size_2_to_9_dimension"
@@ -5971,7 +5971,7 @@
             "Classes size 10 to 19"
           ],
           "label": "Classes size 10 to 19",
-          "name": "Classes size 10 to 19"
+          "name": "Classes_size_10_to_19_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size_10_to_19_dimension"
@@ -5984,7 +5984,7 @@
             "Classes size < 20"
           ],
           "label": "Classes size < 20",
-          "name": "Classes size < 20"
+          "name": "Classes_size_20_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size_20_dimension"
@@ -5997,7 +5997,7 @@
             "Classes size 20 to 29"
           ],
           "label": "Classes size 20 to 29",
-          "name": "Classes size 20 to 29"
+          "name": "Classes_size_20_to_29_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size_20_to_29_dimension"
@@ -6010,7 +6010,7 @@
             "Classes size 30 to 39"
           ],
           "label": "Classes size 30 to 39",
-          "name": "Classes size 30 to 39"
+          "name": "Classes_size_30_to_39_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size_30_to_39_dimension"
@@ -6023,7 +6023,7 @@
             "Classes size 40 to 49"
           ],
           "label": "Classes size 40 to 49",
-          "name": "Classes size 40 to 49"
+          "name": "Classes_size_40_to_49_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size_40_to_49_dimension"
@@ -6036,7 +6036,7 @@
             "Classes size50 to 59"
           ],
           "label": "Classes size50 to 59",
-          "name": "Classes size50 to 59"
+          "name": "Classes_size50_to_59_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size50_to_59_dimension"
@@ -6049,7 +6049,7 @@
             "Classes size >= 100"
           ],
           "label": "Classes size >= 100",
-          "name": "Classes size >= 100"
+          "name": "Classes_size_100_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_size_100_dimension"
@@ -6062,7 +6062,7 @@
             "Classes Total"
           ],
           "label": "Classes Total",
-          "name": "Classes Total"
+          "name": "Classes_Total_level"
         }
       ],
       "name": "usnews_9_9_16_Classes_Total_dimension"
@@ -6075,7 +6075,7 @@
             "Public or Private"
           ],
           "label": "Public or Private",
-          "name": "Public or Private"
+          "name": "Public_or_Private_level"
         }
       ],
       "name": "usnews_9_9_16_Public_or_Private_dimension"
@@ -6088,7 +6088,7 @@
             "Overall Score"
           ],
           "label": "Overall Score",
-          "name": "Overall Score"
+          "name": "Overall_Score_level"
         }
       ],
       "name": "usnews_9_9_16_Overall_Score_dimension"
@@ -6101,7 +6101,7 @@
             "Peer Assessment Score"
           ],
           "label": "Peer Assessment Score",
-          "name": "Peer Assessment Score"
+          "name": "Peer_Assessment_Score_level"
         }
       ],
       "name": "usnews_9_9_16_Peer_Assessment_Score_dimension"
@@ -6114,7 +6114,7 @@
             "High school counselor assessment score"
           ],
           "label": "High school counselor assessment score",
-          "name": "High school counselor assessment score"
+          "name": "High_school_counselor_assessment_score_level"
         }
       ],
       "name": "usnews_9_9_16_High_school_counselor_assessment_score_dimension"
@@ -6127,7 +6127,7 @@
             "Graduation and retention rank"
           ],
           "label": "Graduation and retention rank",
-          "name": "Graduation and retention rank"
+          "name": "Graduation_and_retention_rank_level"
         }
       ],
       "name": "usnews_9_9_16_Graduation_and_retention_rank_dimension"
@@ -6140,7 +6140,7 @@
             "Average freshman retention rate"
           ],
           "label": "Average freshman retention rate",
-          "name": "Average freshman retention rate"
+          "name": "Average_freshman_retention_rate_level"
         }
       ],
       "name": "usnews_9_9_16_Average_freshman_retention_rate_dimension"
@@ -6153,7 +6153,7 @@
             "Predicted graduation rate"
           ],
           "label": "Predicted graduation rate",
-          "name": "Predicted graduation rate"
+          "name": "Predicted_graduation_rate_level"
         }
       ],
       "name": "usnews_9_9_16_Predicted_graduation_rate_dimension"
@@ -6166,7 +6166,7 @@
             "Actual graduation rate"
           ],
           "label": "Actual graduation rate",
-          "name": "Actual graduation rate"
+          "name": "Actual_graduation_rate_level"
         }
       ],
       "name": "usnews_9_9_16_Actual_graduation_rate_dimension"
@@ -6179,7 +6179,7 @@
             "Over under performance"
           ],
           "label": "Over under performance",
-          "name": "Over under performance"
+          "name": "Over_under_performance_level"
         }
       ],
       "name": "usnews_9_9_16_Over_under_performance_dimension"
@@ -6192,7 +6192,7 @@
             "Faculty resources rank"
           ],
           "label": "Faculty resources rank",
-          "name": "Faculty resources rank"
+          "name": "Faculty_resources_rank_level"
         }
       ],
       "name": "usnews_9_9_16_Faculty_resources_rank_dimension"
@@ -6205,7 +6205,7 @@
             "Percent of classes < 20"
           ],
           "label": "Percent of classes < 20",
-          "name": "Percent of classes < 20"
+          "name": "Percent_of_classes_20_level"
         }
       ],
       "name": "usnews_9_9_16_Percent_of_classes_20_dimension"
@@ -6218,7 +6218,7 @@
             "Percent of classes > 50"
           ],
           "label": "Percent of classes > 50",
-          "name": "Percent of classes > 50"
+          "name": "Percent_of_classes_50_level"
         }
       ],
       "name": "usnews_9_9_16_Percent_of_classes_50_dimension"
@@ -6231,7 +6231,7 @@
             "Student/faculty ratio"
           ],
           "label": "Student/faculty ratio",
-          "name": "Student/faculty ratio"
+          "name": "Student_faculty_ratio_level"
         }
       ],
       "name": "usnews_9_9_16_Student_faculty_ratio_dimension"
@@ -6244,7 +6244,7 @@
             "Selectivity rank"
           ],
           "label": "Selectivity rank",
-          "name": "Selectivity rank"
+          "name": "Selectivity_rank_level"
         }
       ],
       "name": "usnews_9_9_16_Selectivity_rank_dimension"
@@ -6257,7 +6257,7 @@
             "SAT 25th percentile"
           ],
           "label": "SAT 25th percentile",
-          "name": "SAT 25th percentile"
+          "name": "SAT_25th_percentile_level"
         }
       ],
       "name": "usnews_9_9_16_SAT_25th_percentile_dimension"
@@ -6270,7 +6270,7 @@
             "SAT 75th Percentile"
           ],
           "label": "SAT 75th Percentile",
-          "name": "SAT 75th Percentile"
+          "name": "SAT_75th_Percentile_level"
         }
       ],
       "name": "usnews_9_9_16_SAT_75th_Percentile_dimension"
@@ -6283,7 +6283,7 @@
             "SAT AVG"
           ],
           "label": "SAT AVG",
-          "name": "SAT AVG"
+          "name": "SAT_AVG_level"
         }
       ],
       "name": "usnews_9_9_16_SAT_AVG_dimension"
@@ -6296,7 +6296,7 @@
             "Freshmen in top 10% of high school class"
           ],
           "label": "Freshmen in top 10% of high school class",
-          "name": "Freshmen in top 10% of high school class"
+          "name": "Freshmen_in_top_10_of_high_school_class_level"
         }
       ],
       "name": "usnews_9_9_16_Freshmen_in_top_10_of_high_school_class_dimension"
@@ -6309,7 +6309,7 @@
             "Acceptance rate"
           ],
           "label": "Acceptance rate",
-          "name": "Acceptance rate"
+          "name": "Acceptance_rate_level"
         }
       ],
       "name": "usnews_9_9_16_Acceptance_rate_dimension"
@@ -6322,7 +6322,7 @@
             "Financial resources rank"
           ],
           "label": "Financial resources rank",
-          "name": "Financial resources rank"
+          "name": "Financial_resources_rank_level"
         }
       ],
       "name": "usnews_9_9_16_Financial_resources_rank_dimension"
@@ -6335,7 +6335,7 @@
             "Alumni giving rank"
           ],
           "label": "Alumni giving rank",
-          "name": "Alumni giving rank"
+          "name": "Alumni_giving_rank_level"
         }
       ],
       "name": "usnews_9_9_16_Alumni_giving_rank_dimension"
@@ -6348,7 +6348,7 @@
             "Average alumni giving rate"
           ],
           "label": "Average alumni giving rate",
-          "name": "Average alumni giving rate"
+          "name": "Average_alumni_giving_rate_level"
         }
       ],
       "name": "usnews_9_9_16_Average_alumni_giving_rate_dimension"
@@ -6361,7 +6361,7 @@
             "Full professors AVG Salary"
           ],
           "label": "Full professors AVG Salary",
-          "name": "Full professors AVG Salary"
+          "name": "Full_professors_AVG_Salary_level"
         }
       ],
       "name": "usnews_9_9_16_Full_professors_AVG_Salary_dimension"
@@ -6374,7 +6374,7 @@
             "Full Professors Count"
           ],
           "label": "Full Professors Count",
-          "name": "Full Professors Count"
+          "name": "Full_Professors_Count_level"
         }
       ],
       "name": "usnews_9_9_16_Full_Professors_Count_dimension"
@@ -6387,7 +6387,7 @@
             "Full Compensation"
           ],
           "label": "Full Compensation",
-          "name": "Full Compensation"
+          "name": "Full_Compensation_level"
         }
       ],
       "name": "usnews_9_9_16_Full_Compensation_dimension"
@@ -6400,7 +6400,7 @@
             "Associate professors AVG Salary"
           ],
           "label": "Associate professors AVG Salary",
-          "name": "Associate professors AVG Salary"
+          "name": "Associate_professors_AVG_Salary_level"
         }
       ],
       "name": "usnews_9_9_16_Associate_professors_AVG_Salary_dimension"
@@ -6413,7 +6413,7 @@
             "Accociate Professor Count"
           ],
           "label": "Accociate Professor Count",
-          "name": "Accociate Professor Count"
+          "name": "Accociate_Professor_Count_level"
         }
       ],
       "name": "usnews_9_9_16_Accociate_Professor_Count_dimension"
@@ -6426,7 +6426,7 @@
             "Associate Professor Full Compensation"
           ],
           "label": "Associate Professor Full Compensation",
-          "name": "Associate Professor Full Compensation"
+          "name": "Associate_Professor_Full_Compensation_level"
         }
       ],
       "name": "usnews_9_9_16_Associate_Professor_Full_Compensation_dimension"
@@ -6439,7 +6439,7 @@
             "Assistant professor AVG Salary"
           ],
           "label": "Assistant professor AVG Salary",
-          "name": "Assistant professor AVG Salary"
+          "name": "Assistant_professor_AVG_Salary_level"
         }
       ],
       "name": "usnews_9_9_16_Assistant_professor_AVG_Salary_dimension"
@@ -6452,7 +6452,7 @@
             "Assistant Professors count"
           ],
           "label": "Assistant Professors count",
-          "name": "Assistant Professors count"
+          "name": "Assistant_Professors_count_level"
         }
       ],
       "name": "usnews_9_9_16_Assistant_Professors_count_dimension"
@@ -6465,7 +6465,7 @@
             "Assistant professor Full Compensation"
           ],
           "label": "Assistant professor Full Compensation",
-          "name": "Assistant professor Full Compensation"
+          "name": "Assistant_professor_Full_Compensation_level"
         }
       ],
       "name": "usnews_9_9_16_Assistant_professor_Full_Compensation_dimension"
@@ -6478,7 +6478,7 @@
             "Instructors AVG Salary"
           ],
           "label": "Instructors AVG Salary",
-          "name": "Instructors AVG Salary"
+          "name": "Instructors_AVG_Salary_level"
         }
       ],
       "name": "usnews_9_9_16_Instructors_AVG_Salary_dimension"
@@ -6491,7 +6491,7 @@
             "Instructors count"
           ],
           "label": "Instructors count",
-          "name": "Instructors count"
+          "name": "Instructors_count_level"
         }
       ],
       "name": "usnews_9_9_16_Instructors_count_dimension"
@@ -6504,7 +6504,7 @@
             "Instructors Full Compensation"
           ],
           "label": "Instructors Full Compensation",
-          "name": "Instructors Full Compensation"
+          "name": "Instructors_Full_Compensation_level"
         }
       ],
       "name": "usnews_9_9_16_Instructors_Full_Compensation_dimension"
@@ -6517,7 +6517,7 @@
             "Unranked faculty AVG Salary"
           ],
           "label": "Unranked faculty AVG Salary",
-          "name": "Unranked faculty AVG Salary"
+          "name": "Unranked_faculty_AVG_Salary_level"
         }
       ],
       "name": "usnews_9_9_16_Unranked_faculty_AVG_Salary_dimension"
@@ -6530,7 +6530,7 @@
             "Unranked Faculty count"
           ],
           "label": "Unranked Faculty count",
-          "name": "Unranked Faculty count"
+          "name": "Unranked_Faculty_count_level"
         }
       ],
       "name": "usnews_9_9_16_Unranked_Faculty_count_dimension"
@@ -6543,7 +6543,7 @@
             "Unranked faculty Full Compensation"
           ],
           "label": "Unranked faculty Full Compensation",
-          "name": "Unranked faculty Full Compensation"
+          "name": "Unranked_faculty_Full_Compensation_level"
         }
       ],
       "name": "usnews_9_9_16_Unranked_faculty_Full_Compensation_dimension"
@@ -6556,7 +6556,7 @@
             "Total Faculty Compensatiom"
           ],
           "label": "Total Faculty Compensatiom",
-          "name": "Total Faculty Compensatiom"
+          "name": "Total_Faculty_Compensatiom_level"
         }
       ],
       "name": "usnews_9_9_16_Total_Faculty_Compensatiom_dimension"
@@ -6569,7 +6569,7 @@
             "Total Faculty"
           ],
           "label": "Total Faculty",
-          "name": "Total Faculty"
+          "name": "Total_Faculty_level"
         }
       ],
       "name": "usnews_9_9_16_Total_Faculty_dimension"
@@ -6582,7 +6582,7 @@
             "AVG compensation per faculty"
           ],
           "label": "AVG compensation per faculty",
-          "name": "AVG compensation per faculty"
+          "name": "AVG_compensation_per_faculty_level"
         }
       ],
       "name": "usnews_9_9_16_AVG_compensation_per_faculty_dimension"
@@ -6595,7 +6595,7 @@
             "2015 Spending per student"
           ],
           "label": "2015 Spending per student",
-          "name": "2015 Spending per student"
+          "name": "2015_Spending_per_student_level"
         }
       ],
       "name": "usnews_9_9_16_2015_Spending_per_student_dimension"
@@ -6608,7 +6608,7 @@
             "2014 Spending per student"
           ],
           "label": "2014 Spending per student",
-          "name": "2014 Spending per student"
+          "name": "2014_Spending_per_student_level"
         }
       ],
       "name": "usnews_9_9_16_2014_Spending_per_student_dimension"
@@ -6621,7 +6621,7 @@
             "Avg spending per student"
           ],
           "label": "Avg spending per student",
-          "name": "Avg spending per student"
+          "name": "Avg_spending_per_student_level"
         }
       ],
       "name": "usnews_9_9_16_Avg_spending_per_student_dimension"

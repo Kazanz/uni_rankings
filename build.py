@@ -108,7 +108,7 @@ def build_dimensions(f, all_cols):
 
 def build_level(col):
     return {
-        "name": col,
+        "name": level_name(col),
         "label": col,
         "attributes": [col]
     }
@@ -121,6 +121,10 @@ def cube_name(col):
 def dimension_name(f, col):
     fbase = ntpath.basename(f).split(".")[0]
     return sanitize_name("{}_{}_dimension".format(fbase, col))
+
+
+def level_name(level):
+    return sanitize_name("{}_level".format(level))
 
 
 def get_sheet(f):
