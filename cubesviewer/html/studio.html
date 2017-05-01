@@ -42,7 +42,7 @@
     // Initialize CubesViewer when document is ready
     $(document).ready(function() {
 
-        if (document.URL.indexOf("localhost")) {
+        if (document.URL.indexOf("localhost") > -1) {
     	    var cubesUrl = prompt ("Enter your Cubes Server URL\n(or try http://cubesdemo.cubesviewer.com)", "http://localhost:5000");
         } else {
             var cubesUrl = "http://ec2-107-21-74-51.compute-1.amazonaws.com:5000/";
